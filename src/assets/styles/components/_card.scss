@@ -1,0 +1,47 @@
+/*------------------------------------*\
+    $CARDs
+\*------------------------------------*/
+/**
+	* Styles for cards
+	*/
+.card {
+	background-clip: border-box;
+	background-color: $white;
+	border-radius: $border-radius;
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	position: relative;
+	word-wrap: break-word;
+}
+
+/**
+	* Styles for card radius
+	*/
+.radio-card-group {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+	grid-gap: 1.25rem;
+
+	> .form-radio-card {
+		display: flex;
+		height: auto;
+	}
+}
+
+.form-radio-card > .form-card-label {
+	border-radius: $border-radius;
+	box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: all 0.2s;
+	padding: $space-1;
+	width: 100%;
+
+	> .card-image {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		margin-top: $space-4;
+		width: 100%;
+	}
+}

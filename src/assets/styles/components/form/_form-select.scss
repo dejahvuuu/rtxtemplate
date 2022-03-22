@@ -1,0 +1,80 @@
+.form-select,
+.form-select-group {
+	appearance: none;
+	background-color: $white;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M5.25 8.625L12 15.375L18.75 8.625' stroke='%238A858B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right $space-2 center;
+	background-size: 24px 24px;
+	border: 1px solid scaleGrey(regular);
+	border-radius: btnRadius(radius-2);
+	color: $textcolor;
+	display: block;
+	line-height: 1.5;
+	padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+	-moz-padding-start: calc(0.75rem - 3px);
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	width: 100%;
+
+	&:focus {
+		border-color: $plt-primary;
+		outline: 0;
+	}
+
+	&[multiple],
+	&[size]:not([size='1']) {
+		background-image: none;
+		padding-right: calc(0.75rem - 3px);
+	}
+
+	&:disabled {
+		background-color: scaleGrey(semiLight);
+		border-color: scaleGrey(regular);
+		color: $textcolor;
+		@include opacity($opacity: 1);
+	}
+
+	&:-moz-focusring {
+		color: transparent;
+		text-shadow: 0 0 0 transparent;
+	}
+	& option {
+		height: 50px !important;
+	}
+}
+
+.form-select-group {
+	height: calc(3.25rem + 2px);
+	line-height: $line-height-base -0.1;
+	background-position: right 0.6rem center !important;
+	&.arrow-hide {
+		background-image: none !important;
+	}
+	& button {
+		border: none !important;
+		font-size: $font-size-base !important;
+	}
+	&.disabled {
+		background-color: scaleGrey(semiLight);
+		border-color: scaleGrey(regular);
+		color: $textcolor;
+		@include opacity($opacity: 1);
+	}
+	&.error {
+		background-color: rgba(242, 69, 96, 0.05);
+		border-color: $color-error;
+	}
+}
+
+.ReactFlagsSelect-module_selectBtn__19wW7:after,
+.ReactFlagsSelect-module_selectBtn__19wW7[aria-expanded='true']:after {
+	display: none;
+}
+
+.ReactFlagsSelect-module_label__27pw9,
+.ReactFlagsSelect-module_secondaryLabel__37t1D {
+	padding-left: 5px !important;
+}
+.ReactFlagsSelect-module_disabledBtn__3A4GF {
+	background-color: scaleGrey(semiLight) !important;
+}

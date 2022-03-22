@@ -1,0 +1,23 @@
+/*------------------------------------*\
+  $TOOLTIPS
+\*------------------------------------*/
+.MuiTooltip-tooltip {
+	color: $textcolor;
+	background-color: $white !important;
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1) !important;
+}
+
+.MuiTooltip-popper {
+	&[data-popper-placement='top'] {
+		left: -10px !important;
+	}
+	&[data-popper-placement='right'] {
+		left: -10px !important;
+	}
+	&[data-popper-placement='bottom'] {
+		top: -10px !important;
+	}
+	&[data-popper-placement='left'] {
+		right: -10px !important;
+	}
+}

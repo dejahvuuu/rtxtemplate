@@ -1,0 +1,759 @@
+{
+	"action": {
+		"accept": "Aceptar",
+		"add": "Agregar",
+		"add_filter": "Agregar filtro",
+		"add_item": "Agregar {{item}}",
+		"add_legal_representative": "Agregar representante legal",
+		"add_legal_representative_plural": "Agregar otro representante legal",
+		"add_owner": "Agregar propietario",
+		"add_owner_plural": "Agregar otro propietario",
+		"add_subaccount": "Agregar subcuenta",
+		"back": "Ir atrás",
+		"back_to_home": "Volver a la página de inicio",
+		"begin": "Empezar",
+		"bulk_actions": "1 ítem seleccionado",
+		"bulk_actions_plural": "{{count}} ítems seleccionados",
+		"cancel": "Cancelar",
+		"change": "Cambiar",
+		"clear_input_value": "Limpiar valor",
+		"clone": "Clonar",
+		"close": "Cerrar",
+		"close_menu": "Cerrar menú",
+		"confirm": "Confirmar",
+		"confirm_recharge": "Confirmar recarga",
+		"confirm_emission": "Confirmar emisión",
+		"continue": "Continuar",
+		"create": "Crear",
+		"create_item": "Crear {{item}}",
+		"delete": "Eliminar",
+		"delete_batch": "Eliminar lote",
+		"edit": "Editar",
+		"expand": "Expandir",
+		"export": "Exportar",
+		"exit": "Salir",
+		"finish": "Finalizar",
+		"firm": "Firmar",
+		"hide": "Ocultar",
+		"issued": "Emitir",
+		"issued_card": "Emitir Tarjeta",
+		"list": "Listar",
+		"look_activity": "Ver toda la actividad",
+		"open_menu": "Abrir menú",
+		"recharge": "Recargar",
+		"recharge_card": "Recargar Tarjeta",
+		"refresh": "Refrescar",
+		"remove": "Borrar",
+		"remove_filter": "Borrar filtro",
+		"request": "Solicitar",
+		"resend": "Reenviar",
+		"resend_code": "Reenviar código",
+		"resend_link": "Reenviar link",
+		"reset": "Restablecer ",
+		"save": "Guardar",
+		"save_continue": "Guardar y continuar",
+		"search": "Buscar",
+		"see_more": "Ver más",
+		"send": "Enviar",
+		"send_code": "Enviar código",
+		"settings_subaccount": "Configurar Subcuentas",
+		"show": "Mostrar",
+		"sort": "Ordenar",
+		"start": "Comenzar",
+		"submit": "Enviar",
+		"transfer": "Transferir",
+		"undo": "Deshacer",
+		"unselect": "Deseleccionar",
+		"update": "Actualizar",
+		"upload": "Cargar",
+		"verify_code": "Verificar código"
+	},
+	"response_server": {
+		"401": "Credenciales no válidas",
+		"404": "Email no registrado"
+	},
+	"modal_template": {
+		"authorizePassword": {
+			"title": "Ingresa tu constraseña para autorizar"
+		},
+		"warning": {
+			"title": "¿Seguro que quieres realizar esta acción?",
+			"msgModal": "Recuerda que está acción no se puede deshacer."
+		},
+		"error": {
+			"title": "Ups!!! Ocurrio un Error.",
+			"msgModal": "Por favor intenta nuevamente."
+		},
+		"success": {
+			"title": "Proceso realizado exitosamente.",
+			"msgModal": "...."
+		},
+		"exit": {
+			"title": "¿Seguro deseas salir de la aplicación?",
+			"msgModal": "Si es así, esperamos que vuelvas pronto."
+		},
+		"closeRegister": {
+			"title": "¿Seguro que quieres salir del proceso de registro?",
+			"msgModal": "Recuerda que tu proceso se guardará."
+		},
+		"deviceModal": {
+			"title": "¡Ups!",
+			"msgModal": "Para una mejor experiencia de nuestra plataforma ingresa por medio de una computadora."
+		},
+		"bulkConfirm": {
+			"title": "¡Lote firmado exitosamente!",
+			"msgModal": "Se ha enviado una notificación al otro autorizador para que pueda autorizar el lote."
+		},
+		"authorizeUser": {
+			"msgModal": "Se necesita de un usuario autorizado para que pueda aprobar y realizar la recarga. Por favor pídele a un usuario autorizado que la realice."
+		},
+		"successTransfer": {
+			"title": "¡Transferencia realizada exitosamente!",
+			"msgModal": {
+				"destiny": "Subcuenta destino: {{destiny}}",
+				"amount": "Monto transferido: {{amount}}",
+				"origen": "Subcuenta origen: {{origen}}"
+			}
+		},
+		"successSubAccount": {
+			"title": "¡Subcuenta agregada exitosamente!",
+			"msgModal": {
+				"name": "Nombre de subcuenta: {{name}}",
+				"management": "Monto transferido: {{management}}"
+			}
+		},
+		"EditAccounts": {
+			"title": "¡Cambios guardados exitosamente!"
+		},
+		"deleteSubAccount": {
+			"title": "¿Deseas eliminar la subcuenta “{{subAccount}}”?",
+			"msgModal": "Recuerda que está acción no se puede deshacer. Una vez se elimine la subcuenta, los fondos serán movidos a la “Cuenta Main”."
+		}
+	},
+	"add_owners": {
+		"paragraph": "Incluye aquí a las personas naturales o jurídicas que tengan más de 25% del capital social, aporte o participación de la empresa. Debes incluir a las personas jurídicas vinculadas a la empresa y/o grupo económico en caso que así corresponda.",
+		"title": "Agregar Propietarios"
+	},
+	"attach_documentation": {
+		"paragraph": "Adjunta los documento requeridos, estos son:",
+		"instructions": {
+			"0": "-Copia literal",
+			"1": "-Vigencia de poder (máximo 3 meses de vigencia)",
+			"2": "-Ficha RUC",
+			"3": "-Copia del documento de identidad de representante(s) legal(es) <0>(Si es más de una, ponlos juntos en un solo archivo).</0>",
+			"4": "Los archivos deben <0>tener formato .PDF y cada archivo no puede superar 1 Mb de peso.</0>"
+		},
+		"title": "Adjuntar documentación"
+	},
+	"company_address": {
+		"paragraph": "Ingresa los detalles de domicilio de tu empresa para continuar el proceso.",
+		"title": "Domicilio de la empresa"
+	},
+	"company_information": {
+		"paragraph": "Ingresa la información de tu empresa para continuar el proceso.",
+		"title": "Información de la empresa"
+	},
+	"emissionsPendingAuthorize": {
+		"title": "Emisiones pendientes por autorizar"
+	},
+	"error_404": {
+		"message": "Parece que no podemos mostrarte esta página ahora, pero no te asustes.",
+		"possible_causes_list": {
+			"0": "Puede ser un pequeño error en la URL que ingresaste.",
+			"1": "La página ya no existe.",
+			"2": "La página se movió de ubicación."
+		}
+	},
+	"error_500": {
+		"meantime_you_can": "Mientras tanto, puedes:",
+		"message": "Al parecer ha habido un error en nuestro servidor, no te preocupes, estamos trabajando para arreglarlo",
+		"to_do_list": {
+			"0": "Intenta refrescar la página.",
+			"1": "Vuelva a intentarlo en unos minutos."
+		}
+	},
+	"individual_issue": {
+		"title": "Emisión cuenta y tarjeta corporativa",
+		"label": "Información del tarjetahabiente"
+	},
+	"legal_representative": {
+		"paragraph": "Debes agregar al representante legal o a todos los representantes legales de la empresa, según como está constituida.",
+		"title": "Agregar representante(s) legal(es)",
+		"button": "Agregar representante legal"
+	},
+	"legal_information": {
+		"paragraph": "Ingresa los datos del representante legal de tu empresa.",
+		"title": "Información representante legal"
+	},
+	"lotsPendingAuthorize": {
+		"title": "Lotes pendientes de autorización"
+	},
+	"natural_person_owner": {
+		"paragraph": "Ingresa la información requerida del propietario (persona natural).",
+		"title": "Agregar propietario persona natural"
+	},
+	"massive_issue": {
+		"title": "Emisión masiva cuentas y tarjetas corporativa"
+	},
+	"order_summary": {
+		"title": "Resumen de orden de servicio"
+	},
+	"owner_legal_entity": {
+		"paragraph": "Ingresa la información requerida del propietario (persona jurídica).",
+		"title": "Agregar propietario persona jurídica"
+	},
+	"owner_type": {
+		"paragraph": "Elige el tipo de propietario que vas agregar.",
+		"title": "Tipo de propietario"
+	},
+	"owner_questionnaire": {
+		"paragraph": "¿El propietario es una persona expuesta políticamente (PEP): ha trabajado o ha estado asociado a una empresa pública en los últimos 5 años?",
+		"title": "Cuestionario sobre propietario"
+	},
+	"preliminary_order": {
+		"title": "Preliminar orden de servicio"
+	},
+	"questionnaire_legal": {
+		"paragraph": "¿El representante legal es una persona expuesta políticamente (PEP): ha trabajado o ha estado asociado a una empresa pública en los últimos 5 años?",
+		"title": "Cuestionario sobre representante legal"
+	},
+	"recharge_file": {
+		"paragraph": "Carga tu archivo de recarga masiva,",
+		"paragraphTwo": "asegúrate que sea en formato .txt y que el archivo sea el correcto."
+	},
+	"rechargesMade": {
+		"title": "Recargas realizadas"
+	},
+	"rechargesPendingAuthorize": {
+		"title": "Recargas pendientes por autorizar"
+	},
+	"recharge_summary": {
+		"title": "Resumen de la recarga"
+	},
+	"accountLockout": {
+		"paragraph": "Una vez se bloquee se enviará un correo electrónico al usuario.",
+		"title": "¿Seguro que quieres bloquear esta cuenta?"
+	},
+	"relative_information": {
+		"paragraph": "Ingresa el nombre completo y DNI de los parientes de la persona expuesta políticamente (PEP) hasta el segundo grado de consanguinidad (padres, hijos, hermanos y nietos) y segundo grado de afinidad (cónyuge o conviviente, suegros y cuñados).",
+		"button": "Agregar pariente"
+	},
+	"second_firm": {
+		"paragraph": "Se requiere una segunda firma para autorizar este lote"
+	},
+	"selected_program": {
+		"paragraph": "Programa seleccionado: {{program}}"
+	},
+	"successful_lock": {
+		"title": "¡La cuenta se ha bloqueado exitosamente!"
+	},
+	"summary_emission": {
+		"title": "Resumen de la emisión"
+	},
+	"terms_and_conditions": {
+		"paragraph": "Acepto los términos y condiciones de la plataforma y las políticas de protección y manejo de datos",
+		"paragraphInfo": "mas información verídica."
+	},
+	"without_recharge": {
+		"paragraph": "Empieza a recargar las diferentes tarjetas que emitas para que veas el historial.",
+		"title": "Sin recargas en el momento"
+	},
+	"form": {
+		"addressDepartment_label": "Departamento de domicilio",
+		"addressDepartment_placeholder": "Departamento de domicilio",
+		"addressDistrict_label": "Distrito de domicilio",
+		"addressDistrict_placeholder": "Distrito de domicilio",
+		"addressProvince_label": "Provincia de domicilio",
+		"addressProvince_placeholder": "Provincia de domicilio",
+		"authorizeBulk_label": "Ingresa tu contraseña",
+		"authorizeBulk_placeholder": "Ingresa tu contraseña",
+		"atm_withdraw": "¿La requieres con retiros en cajeros automáticos?",
+		"both_label": "Ambas",
+		"commercialAdvisor_label": "Asesor comercial",
+		"corporateEmail_label": "Correo electrónico corporativo",
+		"corporateEmail_placeholder": "Ingresa tu correo electrónico corporativo",
+		"dollar_label": "Dólar",
+		"economicActivity_label": "Actividad económica",
+		"economicActivity_placeholder": "Actividad económica",
+		"email_label": "Correo electrónico",
+		"username_label": "Nombre de usuario",
+		"email_placeholder": "Ingresa tu correo electrónico",
+		"errors": {
+			"businessName": {
+				"required": "Ingresa razón social"
+			},
+			"companyName": {
+				"required": "Ingresa el nombre de tu empresa"
+			},
+			"companyRuc": {
+				"max": "El RUC debe tener máximo 11 dígitos",
+				"regex": "Sólo se admiten números",
+				"required": "Ingresa el número del RUC de tu empresa"
+			},
+			"country": {
+				"required": "Ingresa el país"
+			},
+			"countryResidenceOption": {
+				"required": "Ingresa tu país de residencia"
+			},
+			"endingYear": {
+				"required": "Agrega el año de finalización"
+			},
+			"districtResidence": {
+				"required": "Seleccione el distrito de domicilio"
+			},
+			"documentNumber": {
+				"regex": "Sólo se admiten números y letras",
+				"required": "Ingresa el número de documento"
+			},
+			"email": {
+				"regex": "Debe ser un correo electrónico válido",
+				"required": "Ingresa tu correo electrónico"
+			},
+			"firstName": {
+				"regex": "Sólo se admiten letras y espacios (mín 3, máx 40)",
+				"required": "Ingresa tu primer nombre"
+			},
+			"firstSurname": {
+				"regex": "Sólo se admiten letras y espacios (mín 3, máx 40)",
+				"required": "Ingresa tu primer apellido"
+			},
+			"homeDepartment": {
+				"required": "Seleccione el departamento de domicilio"
+			},
+			"format": "Formato inválido",
+			"maxLength": "Debe contener {{max}} caracteres o menos",
+			"maxValue": "Debe ser {{max}} o menos",
+			"middleName": {
+				"regex": "Sólo se admiten letras y espacios (mín 3, máx 40)",
+				"required": "Ingresa tu segundo nombre"
+			},
+			"identityDocuments": {
+				"required": "Agrega documentos de identidad"
+			},
+			"institutionNameOption": {
+				"required": "Ingresa el nombre de institución"
+			},
+			"literalCopy": {
+				"required": "Agrega copia literal"
+			},
+			"minLength": "Debe contener {{min}} caracteres al menos",
+			"minValue": "Debe ser al menos {{min}}",
+			"nameFamilyMember": {
+				"regex": "Sólo se admiten letras y espacios (mín 3, máx 40)",
+				"required": "Ingresa el nombre completo del pariente"
+			},
+			"nationalityOption": {
+				"required": "Ingresa tu nacionalidad"
+			},
+			"number": "Debe ser un número",
+			"officePhoneNumber": {
+				"required": "Ingresa un número de teléfono de oficina",
+				"max": "El número de teléfono debe tener máximo 9 dígitos",
+				"regex": "Sólo se admiten números"
+			},
+			"oneOf": "Debe ser uno de: {{options}}",
+			"password": {
+				"max": "La contraseña debe tener máximo 25 caracteres",
+				"min": "La contraseña debe tener al menos 8 caracteres",
+				"regex": "La contraseña debe cumplir los requisitos",
+				"required": "Ingresa una contraseña"
+			},
+			"passwordConfirmation": {
+				"matching": "Las contraseñas no coinciden",
+				"required": "Ingresa nuevamente tu contraseña"
+			},
+			"personEmail": {
+				"regex": "Debe ser un correo electrónico válido",
+				"required": "Ingresa tu correo electrónico personal"
+			},
+			"personalPhoneCoVe": {
+				"required": "Ingrese un número de teléfono personal",
+				"max": "El número de teléfono debe tener máximo 10 dígitos",
+				"regex": "Sólo se admiten números"
+			},
+			"personalPhoneEc": {
+				"required": "Ingrese un número de teléfono personal",
+				"max": "El número de teléfono debe tener máximo 8 dígitos",
+				"regex": "Sólo se admiten números"
+			},
+			"personalPhonePePrUs": {
+				"required": "Ingrese un número de teléfono personal",
+				"max": "El número de teléfono debe tener máximo 7 dígitos",
+				"regex": "Sólo se admiten números"
+			},
+			"positionCompanyOption": {
+				"required": "Ingresa el cargo en la empresa"
+			},
+			"phoneNumber": {
+				"required": "Ingrese un número de teléfono",
+				"max": "El número de teléfono debe tener máximo 9 dígitos",
+				"regex": "Sólo se admiten números"
+			},
+			"provinceResidence": {
+				"required": "Seleccione la provincia de domicilio"
+			},
+			"radioRequired": "Selecciona una opción",
+			"regex": "Debe coincidir con un formato específico (regexp): {{pattern}}",
+			"required": "Este campo es requerido",
+			"rucFile": {
+				"required": "Agrega ficha RUC"
+			},
+			"secondLastname": {
+				"regex": "Sólo se admiten letras y espacios (mín 3, máx 40)",
+				"required": "Ingresa tu segundo apellido"
+			},
+			"selectRequired": "Selecciona una opción",
+			"specifyOption": {
+				"required": "Especifica"
+			},
+			"taxAddress": {
+				"required": "Ingrese el domicilio fiscal"
+			},
+			"termsAndConditions": {
+				"required": "Debe aceptar los términos y condiciones"
+			},
+			"tradeName": {
+				"required": "Ingresa el nombre de tu empresa"
+			},
+			"validityPower": {
+				"required": "Agrega vigencia de poder"
+			},
+			"webPage": {
+				"required": "Ingresa una página web",
+				"regex": "Página web inválida"
+			}
+		},
+		"balanceSubAccount_label": "Saldo de subcuenta",
+		"balanceSubAccount_placeholder": "Ingresa el saldo de subcuenta",
+		"businessName_label": "Razón social",
+		"businessName_placeholder": "Ingresa la razón social",
+		"cardholderInformation_label": "Información del tarjetahabiente",
+		"country_label": "País",
+		"countryResidence_label": "País de residencia",
+		"datepicker": "es",
+		"destinySubAccount_label": "Subcuenta destino",
+		"documentNumber_label": "Número de documento",
+		"documentNumber_placeholder": "Ingresa el número de documento",
+		"documentType_label": "Tipo doc.",
+		"documentType_placeholder": "Tipo doc.",
+		"endingYear_label": "Año de finalización",
+		"fname_label": "Primer nombre",
+		"fname_placeholder": "Ingresa tu primer nombre",
+		"firstSurname_label": "Primer apellido",
+		"firstSurname_placeholder": "Ingresa tu primer apellido",
+		"how_did_u_meet_us": "¿Cómo nos conociste?",
+		"identityDocuments_label": "Documentos de identidad",
+		"institutionName_label": "Nombre de institución",
+		"institutionName_placeholder": "Nombre de institución",
+		"literalCopy_label": "Copia Literal",
+		"managerSubAccount_label": "Encargado de la subcuenta",
+		"managerSubAccount_placeholder": "Ingresa el encargado de la subcuenta",
+		"lname_label": "Segundo nombre",
+		"lname_placeholder": "Ingresa tu segundo nombre",
+		"name_label": "Nombre completo",
+		"name_placeholder": "Ingresa el nombre completo",
+		"nameMainAccount_label": "Nombre de cuenta principal",
+		"nameMainAccount_placeholder": "Ingresa el nombre de cuenta principal",
+		"nameSubAccount_label": "Nombre de Subcuenta",
+		"nameSubAccount_placeholder": "Ingresa el nombre de la Subcuenta",
+		"nationality_label": "Nacionalidad",
+		"no_label": "No",
+		"no_cardholder_label": "No, otra persona",
+		"notApply_label": "No aplica en el caso de mi empresa",
+		"officePhone_label": "Teléfono de oficina",
+		"officePhone_placeholder": "Ingresa tu teléfono de oficina",
+		"optional_label": "(Opcional)",
+		"other_label": "Otro",
+		"originSubAccount_label": "Subcuenta origen",
+		"passwordConfirmation_label": "Confirmar contraseña",
+		"passwordConfirmation_placeholder": "Ingresa tu contraseña nuevamente",
+		"password_label": "Contraseña",
+		"password_placeholder": "Ingresa tu contraseña",
+		"newPasswordConfirmation_label": "Confirmar contraseña nueva",
+		"newPasswordConfirmation_placeholder": "Ingresa tu contraseña nuevamente",
+		"newPassword_label": "Nueva contraseña",
+		"newPassword_placeholder": "Ingresa tu contraseña nueva",
+		"currentPassword_label": "Contraseña actual",
+		"currentPassword_placeholder": "Ingresa tu contraseña actual",
+		"personalEmail_label": "Correo electrónico personal",
+		"personalEmail_placeholder": "Ingresa tu correo electrónico personal",
+		"personalPhone_label": "Número de teléfono personal",
+		"personalPhone_placeholder": "Ingresa tu número de teléfono personal",
+		"phone_label": "Número de teléfono",
+		"phone_placeholder": "Ingresa el número de teléfono",
+		"physicalCard_label": "Tarjeta física",
+		"positionCompany_label": "Cargo en la empresa",
+		"positionCompany_placeholder": "Cargo en la empresa",
+		"program_label": "Escoge el programa",
+		"radiocardLegalPerson_label": "Persona jurídica",
+		"radiocardNaturalPerson_label": "Persona natural con negocio",
+		"reasonBlocking_label": "Motivo del bloqueo",
+		"received_cardholder": "¿La tarjeta la recibe el mismo tarjetahabiente?",
+		"recharge_label": "Recarga",
+		"representativeName_placeholder": "Nombre representante",
+		"rucFile_label": "Ficha RUC",
+		"rucNumber_label": "Número del RUC",
+		"rucNumber_placeholder": "Ingresa el número RUC de tu empresa",
+		"salesCurrency_label": "Elige la moneda de ventas",
+		"salesVolume_label": "Volumen de venta",
+		"secondLastname_label": "Segundo apellido",
+		"secondLastname_placeholder": "Ingresa tu segundo apellido",
+		"selectOption_label": "Selecciona una opción",
+		"socialNetworks_label": "Redes sociales",
+		"soles_label": "Soles",
+		"specify_label": {
+			"network": "Especifica por medio de cual red",
+			"other": "Especifica",
+			"trading": "Ingrese el nombre o código del asesor"
+		},
+		"type_card": "¿Qué tipo de tarjeta necesitas?",
+		"type_solution": {
+			"corporate": "Las soluciones corporativas permiten emitir una o varias tarjetas a nombre de la empresa para un empleado, selecciona un programa y el tipo de emisión que quieres realizar.",
+			"employee": "Las soluciones empleados permiten emitir una o varias tarjetas a nombre de los empleados y ellos usarlas a su gusto. Selecciona un programa y el tipo de emisión que quieres realizar.",
+			"single": "Las soluciones de única recarga permite emitir una o varias tarjetas que tiene como finalidad dar el saldo recargado como regalo y una vez gastado no puede utilizarse más."
+		},
+		"taxAddress_label": "Domicilio fiscal",
+		"taxAddress_placeholder": "Ingresa tu domicilio fiscal",
+		"tradeName_label": "Nombre Comercial",
+		"tradeName_placeholder": "Ingresa el nombre de tu empresa",
+		"tranferAmount_label": "Monto a transferir",
+		"tranferAmount_placeholder": "Ingresa el monto a transferir",
+		"type_label": "Tipo",
+		"validityPower_label": "Vigencia de poder",
+		"virtualCard_label": "Tarjeta virtual",
+		"webPage_label": "Página web",
+		"webPage_placeholder": "Ingresa tu página web",
+		"yes_label": "Si"
+	},
+	"information-validation": {
+		"0": {
+			"paragraph": "Te enviaremos un correo con el resultado de la validación lo más pronto que podamos. Si es aceptada, encontrarás un enlace para que comiences tu registro.",
+			"title": "Validación en proceso"
+		},
+		"1": {
+			"paragraph": "Uno de nuestros ejecutivos comerciales se pondrá en contacto lo antes posible al correo electrónico que ingresaste.",
+			"title": "Nos contactaremos contigo"
+		}
+	},
+	"input": {
+		"file": {
+			"upload_several": "Arrastre algunos archivos para subir o haga clic para seleccionarlos.",
+			"upload_single": "Arrastre un archivo para subir o haga clic para seleccionarlo."
+		},
+		"image": {
+			"upload_several": "Arrastre algunas imagénes para subir o haga clic para seleccionarlas.",
+			"upload_single": "Arrastre alguna imagen para subir o haga clic para seleccionarla."
+		},
+		"password": {
+			"toggle_hidden": "Mostrar contraseña",
+			"toggle_visible": "Ocultar contraseña"
+		}
+	},
+	"message": {
+		"about": "Acerca de",
+		"are_you_sure": "¿Está seguro?",
+		"auth_check_error": "Por favor inicie sesión para continuar",
+		"bulk_delete_content": "¿Seguro que quiere eliminar este {{name}}?",
+		"bulk_delete_content_plural": "¿Seguro que quiere eliminar estos {{count}} ítems?",
+		"bulk_delete_title": "Eliminar {{name}}",
+		"bulk_delete_title_plural": "Eliminar {{count}} {{name}} ítems",
+		"bulk_update_content": "¿Seguro que quiere actualizar este {{name}}?",
+		"bulk_update_content_plural": "¿Seguro que quiere actualizar estos {{count}} ítems?",
+		"bulk_update_title": "Actualizar {{name}}",
+		"bulk_update_title_plural": "Actualizar {{count}} {{name}}",
+		"data_provided_secure": "<0>Los datos proveídos están seguros</0>. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magnos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.",
+		"delete_content": "¿Seguro que quiere eliminar este item?",
+		"delete_title": "Eliminar {{name}} #{{id}}",
+		"details": "Detalles",
+		"english": "Inglés",
+		"error": "Se produjo un error en el cliente y su solicitud no se pudo completar",
+		"error_code": "Código error: {{code}}",
+		"great": "¡Genial!",
+		"invalid_form": "El formulario no es válido. Por favor verifique si hay errores",
+		"loading": "La página se está cargando, espere un momento por favor",
+		"logout": "Cerrar sesión",
+		"alt_logo": "Logo Tenux",
+		"no": "No",
+		"not_found": "O bien escribió una URL incorrecta o siguió un enlace incorrecto.",
+		"oops_title": "¡Ups!",
+		"password_strength_list": {
+			"0": "Debe contener mínimo 8 caracteres.",
+			"1": "Tener al menos una mayúscula.",
+			"2": "Contener un carácter especial (!#$%&)."
+		},
+		"spanish": "Español",
+		"subaccount": "Subcuentas",
+		"understood": "Entendido",
+		"unsaved_changes": "Algunos de sus cambios no se guardaron. ¿Está seguro que quiere ignorarlos?",
+		"welcome": "Bienvenidos a {{name}}",
+		"yes": "Sí"
+	},
+	"navigation": {
+		"back": "Atrás",
+		"next": "Siguiente",
+		"no_more_results": "El número de página {{page}} está fuera de los límites. Pruebe la página anterior.",
+		"no_results": "No se han encontrado resultados",
+		"page_out_from_begin": "No puede ir antes de la página 1",
+		"page_out_from_end": "No puede ir después de la última página",
+		"page_out_of_boundaries": "Número de página {{page}} fuera de los límites",
+		"page_range_info": "{{offsetBegin}} - {{offsetEnd}} de {{total}}",
+		"page_rows_per_page": "Filas por página:",
+		"prev": "Anterior",
+		"skip_nav": "Saltar al contenido"
+	},
+	"notification": {
+		"bad_item": "Elemento incorrecto",
+		"canceled": "Acción cancelada",
+		"continue_registration_process": "Si tuviste que salir mientras hacías tu proceso de registro, puedes continuarlo ingresando en <1>“{{name}}”</1> con el correo electrónico y contraseña con qué iniciaste el registro.",
+		"created": "Elemento creado",
+		"deleted": "Elemento borrado",
+		"deleted_plural": "{{count}} elementos borrados",
+		"http_error": "Error de comunicación con el servidor",
+		"i18n_error": "No se pudieron cargar las traducciones para el idioma especificado",
+		"item_doesnt_exist": "El elemento no existe",
+		"logged_out": "Su sesión ha finalizado, vuelva a conectarse.",
+		"updated": "Elemento actualizado",
+		"updated_plural": "{{count}} elementos actualizados"
+	},
+	"onboarding_validation": {
+		"message": {
+			"0": "Revisaremos tu información, te enviaremos un SMS y correo electrónico con el resultado lo antes posible.",
+			"1": "Podrás empezar a configurar tus cuentas siguiendo las instrucciones que te enviamos en el correo electrónico."
+		},
+		"title": "¡Solicitud enviada exitosamente!"
+	},
+	"page": {
+		"create": "Crear {{name}}",
+		"empty": "La lista está vacía.",
+		"error": "Algo salió mal",
+		"list": "Lista de {{name}}",
+		"loading": "Cargando",
+		"not_found": "No encontrado"
+	},
+	"password_validation": {
+		"message": "Tu contraseña se ha restablecido y ya puedes usarla para iniciar sesión.",
+		"title": "¡Contraseña restablecida exitosamente!"
+	},
+	"recover_acces": {
+		"message": "Ingresa tu correo electrónico y te enviaremos un link para que crees una nueva contraseña.",
+		"title": "¿Olvidaste la contraseña?"
+	},
+	"recover_password": {
+		"action": "Crear nueva contraseña",
+		"message": "Crea tu nueva contraseña que usarás para ingresar a la plataforma.",
+		"title": "Nueva contraseña"
+	},
+	"recover_validation": {
+		"message": "Hemos enviado un enlace al correo asociado a tu cuenta, haga clic en este para poder restablecer tu contraseña.",
+		"title": "Enlace enviado"
+	},
+	"register_modal_welcome": {
+		"instructions": {
+			"0": "Completarlo puede tomar entre 5 y 15 minutos.",
+			"1": "Tu información de registro <0>se guardará automáticamente.</0>",
+			"2": "Todos lo campos <0>son obligatorios, a menos que el campo indique que es opcional.</0>",
+			"3": "Retoma tu registro <0>en “Inicia sesión“ e ingresando tus credenciales (correo corporativo y contraseña)</0> para seguir donde dejaste tu proceso de registro."
+		},
+		"title": "Bienvenido al proceso de registro"
+	},
+	"register_modal_document": {
+		"instructions": {
+			"0": "Recuerda que para que el proceso sea más agil, debes tener <0>la información principal sobre el o los representantes legales</0>, ya que te la pediremos más adelante.",
+			"1": "También debes tener <0>la información del o de los propietarios de la empresa y la información sobre esto</0>.",
+			"2": "Ten toda la documentación antes de comenzar para que el registro sea lo más rapido posible."
+		},
+		"title": "Ten la información contigo"
+	},
+	"register_modal_upload": {
+		"instructions": {
+			"0": "Copia literal.",
+			"1": "Vigencia de poder (máximo 3 meses de antigüedad).",
+			"2": "Ficha RUC.",
+			"3": "Copia del documento de identidad de representante(s) legal(es)."
+		},
+		"paragraph": "Te pediremos que adjuntes unos documentos más adelante. Tenlos separados en una carpeta para que el proceso sea más rápido:",
+		"title": "Alista los documentos"
+	},
+	"sign_in": {
+		"captcha_error": "Se ha presentado un error por favor intentar nuevamente.",
+		"dont_have_account": "¿Todavía no tienes cuenta?",
+		"forgot_pass": "¿Olvidaste tu contraseña?",
+		"login": "Inicia sesión",
+		"paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae pharetra id augue tincidunt. Eget commodo mi tincidunt sit vivamus auctor quam egestas.",
+		"remember": "Recuérdame",
+		"sign_in": "Iniciar sesión",
+		"sign_in_error": "Usuario o contraseña invalida. Por favor intenta de nuevo.",
+		"sign_up_here": "Regístrate aquí",
+		"title": "La herramienta de Cash Management con todo a la mano"
+	},
+	"sign_up": {
+		"have_account": "¿Ya tienes cuenta?",
+		"instructions": "Ingresa los datos a continuación para iniciar tu registro y obtener tus credenciales para iniciar sesión.",
+		"sign_up_button": "Comenzar registro",
+		"title": "Validación de datos"
+	},
+	"sort": {
+		"ASC": "ascendente",
+		"DESC": "descendente",
+		"sort_by": "Ordenar por {{field}} {{order}}"
+	},
+	"dashboard": {
+		"activity": "Actividad",
+		"balance_total": "Saldo total",
+		"card_status": {
+			"transaction": "Transacciones mensuales",
+			"issued": "Tarjetas Emitidas",
+			"employed": "Empleados inscritos"
+		},
+		"income_expense": "Ingresos y egresos",
+		"last_session": "Última sesión:",
+		"main_account": "Cuenta Main",
+		"report": "Reporte Mensual"
+	},
+	"recharge": {
+		"download_recharge_file": "Descargar archivo de recarga",
+		"title": "Escoge el programa de las tarjetas que vas a recargar",
+		"type_program": "¿Qué tipo de recarga quieres realizar?",
+		"type_recharge": {
+			"massive": "Recarga masiva",
+			"individual": "Recarga individual"
+		},
+		"upload_recharge_file": "Carga tu archivo de recarga masiva, <1>asegúrate que sea en formato .txt y que el archivo sea el correcto.</1>"
+	},
+	"emission": {
+		"download_emission_file": "Descargar archivo de emisión",
+		"emission_download_file": "Llena el archivo de emisión masiva que puedes descargar a continuación.",
+		"emission_upload_file": "Carga tu archivo de emisión masiva, <1>asegúrate que sea en formato .txt y que el archivo sea el correcto.</1>",
+		"noEmission": {
+			"title": "Sin emisiones en el momento",
+			"paragraph": "Empieza a emitir las diferentes cuentas y tarjetas para tus empleados"
+		},
+		"table_title": "Cuentas emitidas",
+		"type_program": "¿Qué tipo de tarjeta quieres emitir?",
+		"type_emission": {
+			"physical": "Tarjeta física",
+			"virtual": "Tarjeta Virtual"
+		}
+	},
+	"accounts": {
+		"active": "Tarjetas activas",
+		"add_subaccount": "Agregar una subcuenta",
+		"create_subaccount": {
+			"title": "Crea una o varias subcuentas",
+			"content": "Organiza el dinero de tu empresa organizandolo en subcuentas de las respectivas áreas."
+		},
+		"edit_main_account": "Editar cuenta principal",
+		"edit_subaccount": "Editar subcuenta",
+		"first_transfer": {
+			"title": "Realiza tu primera transferencia",
+			"content": "Transfiere el dinero de tu cuenta Main a tus subcuentas y también entre estas mismas para organizar el dinero de tu empresa."
+		},
+		"issued": "Cuentas emitidas",
+		"transfer_subaccounts": "Transferir entre subcuentas"
+	},
+	"lock_unlock": {
+		"active": "Cuentas activas",
+		"blocked": "Cuentas bloqueadas"
+	}
+}

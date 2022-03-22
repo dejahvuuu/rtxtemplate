@@ -1,0 +1,65 @@
+/*------------------------------------*\
+    $MULTI STEP ONBORDING
+\*------------------------------------*/
+.MuiStepper-root {
+	margin: auto;
+	max-width: 450px;
+}
+
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root {
+	color: scaleGrey(semiLight);
+
+	&.Mui-active {
+		color: $plt-primary;
+
+		& .css-117w1su-MuiStepIcon-text {
+			fill: $white !important;
+			text-shadow: 0 0 $white;
+		}
+	}
+
+	& .css-117w1su-MuiStepIcon-text {
+		text-shadow: 0 0 $textcolor;
+		fill: $textcolor;
+		font-family: $font-family-base;
+		font-weight: $bold-font-weight;
+	}
+}
+
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed {
+	color: $plt-primary;
+}
+
+.css-zpcwqm-MuiStepConnector-root {
+	top: 12px;
+	left: calc(-50% + 12px);
+	right: calc(50% + 12px);
+
+	& .MuiStepConnector-line {
+		border-color: scaleGrey(semiLight);
+		border-image-slice: 1;
+		border-top-style: solid;
+		border-top-width: 1px * 3;
+		position: relative;
+	}
+}
+
+.Mui-completed:first-of-type {
+	& + .MuiStep-root {
+		& .Mui-active {
+			& .MuiStepConnector-line {
+				border-color: $plt-primary !important;
+				border-image-source: none;
+			}
+		}
+	}
+}
+
+.MuiStep-root {
+	& .Mui-completed{
+		& .MuiStepConnector-line {
+			border-color: $plt-primary !important;
+			border-image-source: none;
+		}
+	}
+}

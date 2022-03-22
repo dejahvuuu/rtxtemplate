@@ -1,0 +1,124 @@
+.form-floating {
+	position: relative;
+
+	> .form-control,
+	> .form-select {
+		height: calc(3.25rem + 2px);
+		line-height: $line-height-base - 0.5;
+	}
+
+	> label {
+		border: 1px solid transparent;
+		position: absolute;
+		font-size: $font-size-base;
+		height: 100%;
+		left: 0;
+		line-height: initial;
+		padding: $space-2 0.75rem;
+		pointer-events: none;
+		top: 0;
+		transform-origin: 0 0;
+		transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+	}
+
+	> .form-control {
+		padding: $space-2 6rem 0.75rem 0.75rem;
+
+		&::placeholder {
+			color: transparent;
+		}
+
+		&:focus,
+		&:not(:placeholder-shown) {
+			color: scaleGrey(strong);
+			padding-bottom: 0.563rem;
+			padding-top: 1.563rem;
+		}
+
+		&:-webkit-autofill {
+			padding-bottom: 0.563rem;
+			padding-top: 1.563rem;
+		}
+	}
+
+	> .form-select {
+		padding-bottom: 0.563rem;
+		padding-top: 1.563rem;
+	}
+
+	> .form-control:focus,
+	> .form-control:not(:placeholder-shown),
+	> .form-select {
+		~ label {
+			color: $textcolor;
+			opacity: 0.8;
+			transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+		}
+	}
+
+	> .form-control:hover:not(:disabled):not([readonly]) ~ label {
+		color: $plt-hover;
+	}
+
+	> .form-control:-webkit-autofill {
+		~ label {
+			color: $plt-primary;
+			@include opacity($opacity: 0.8);
+			transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+		}
+	}
+}
+
+.form-floting-eye {
+	cursor: pointer;
+	right: 15px;
+	top: 4px;
+
+	& span {
+		display: flex;
+		font-size: 1.2rem;
+		padding: 0.2rem $space-1;
+	}
+}
+
+div[class^='form-'],
+div[class*=' form-'] {
+	& .error {
+		background-color: rgba(242, 69, 96, 0.05);
+		border-color: $color-error;
+	}
+	& .form-error {
+		color: $color-error;
+		position: absolute;
+	}
+}
+
+.form-optional {
+	cursor: default;
+	right: 15px;
+	top: 8px;
+
+	& small {
+		display: flex;
+		padding: 0.7rem $space-1;
+	}
+}
+
+.container-form {
+	& .widget-container {
+		align-items: center;
+		justify-content: center;
+		height: 100vh;
+		width: 100%;
+	}
+	& form {
+		width: 450px;
+	}
+}
+
+@include respond-to-max(tablet) {
+	.container-form form {
+		padding: 0 $space-6;
+		width: 100% !important;
+	}
+}

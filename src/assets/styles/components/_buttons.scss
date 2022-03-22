@@ -1,0 +1,295 @@
+/*------------------------------------*\
+  $BOTONES
+\*------------------------------------*/
+/**
+  * Correct the inability to style clickable types in iOS and Safari.
+  */
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+	background-color: transparent;
+	border: none;
+	-webkit-appearance: button;
+}
+
+/**
+	* Opinionated: add "hand" cursor to non-disabled button elements.
+	*/
+button:not(:disabled),
+[type='button']:not(:disabled),
+[type='reset']:not(:disabled),
+[type='submit']:not(:disabled) {
+	cursor: pointer;
+}
+
+/**
+	* Main class to define a button
+	*/
+%btn {
+	-webkit-appearance: none;
+	align-items: center;
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-radius: btnRadius(radius-1);
+	color: $white;
+	cursor: pointer;
+	display: inline-flex;
+	font-family: $font-family-base;
+	height: 50px;
+	justify-content: center;
+	line-height: normal;
+	margin: 0;
+	min-width: 112px;
+	padding: $space-1 $space-4;
+	text-decoration: none;
+	@include transition(0.3s);
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+%btn-disabled {
+	color: scaleGrey(regular);
+	cursor: not-allowed;
+	@include opacity($opacity: 0.5);
+	pointer-events: none;
+	text-decoration: none;
+}
+
+/**
+	* Primary
+	*/
+.btn-primary {
+	@extend %btn;
+	background-color: $plt-primary;
+	border-radius: btnRadius(radius-1);
+	box-shadow: 0 7px 27px 0 rgba(10, 96, 249, 0.15);
+
+	&:hover {
+		background-color: $plt-hover;
+	}
+
+	&:active {
+		background-color: $plt-active;
+	}
+
+	&:focus {
+		outline: 1px solid $plt-focus;
+	}
+
+	&:disabled,
+	&.disabled {
+		background-color: scaleGrey(semiLight);
+		box-shadow: none;
+		@extend %btn-disabled;
+		& i {
+			color: scaleGrey(regular);
+		}
+	}
+}
+
+/**
+	* Outline button
+	*/
+.btn-outline {
+	@extend %btn;
+	border-color: $plt-primary;
+	border-radius: btnRadius(radius-1);
+	color: $plt-primary;
+
+	&:hover:not(:disabled):not(.disabled) {
+		background-color: $plt-hover;
+		border: 1px solid $plt-primary;
+		color: $white;
+	}
+
+	&:focus {
+		background-color: $white;
+		outline: 1px solid $plt-focus;
+	}
+
+	&:disabled,
+	&.disabled {
+		border-color: scaleGrey(semiLight);
+		@extend %btn-disabled;
+	}
+}
+
+/**
+	* Inline button
+	*/
+.btn-inline {
+	@extend %btn;
+	border-color: none;
+	color: $plt-primary;
+
+	&:hover {
+		color: $plt-primary;
+		text-decoration: none;
+	}
+
+	&:focus {
+		color: $plt-primary;
+		text-decoration: none;
+	}
+
+	&:disabled,
+	&.disabled {
+		@extend %btn-disabled;
+		& i {
+			color: scaleGrey(regular);
+		}
+	}
+}
+
+/**
+	* Link button
+	*/
+.btn-link {
+	background-color: transparent;
+	border: none;
+	color: $plt-primary;
+	cursor: pointer;
+	text-decoration: none;
+
+	&:hover {
+		color: $plt-primary;
+		text-decoration: none;
+	}
+
+	&:focus {
+		color: $plt-primary;
+		text-decoration: none;
+	}
+
+	&:disabled,
+	&.disabled {
+		@extend %btn-disabled;
+		& i {
+			color: scaleGrey(regular);
+		}
+	}
+	&.link-error {
+		color: $color-error;
+	}
+}
+
+/**
+	* Error button
+	*/
+.btn-error {
+	@extend %btn;
+	background-color: $color-error;
+	&:hover {
+		background: lighten($color: $color-error, $amount: 10);
+	}
+
+	&:focus {
+		background: darken($color: $color-error, $amount: 10);
+	}
+}
+
+/**
+	* Error Inline button
+	*/
+.btn-inline-error {
+	@extend %btn;
+	color: $color-error;
+	& i {
+		color: $color-error;
+	}
+
+	&:hover,
+	& i:hover {
+		color: lighten($color: $color-error, $amount: 10);
+	}
+
+	&:focus {
+		color: darken($color: $color-error, $amount: 10);
+	}
+}
+
+/**
+	* Warning button
+	*/
+.btn-warning {
+	@extend %btn;
+	color: $color-warning;
+	&:hover {
+		color: $color-warning;
+	}
+
+	&:visited {
+		color: $color-warning;
+	}
+}
+
+/**
+	* Success button
+	*/
+.btn-success {
+	@extend %btn;
+	color: $color-success;
+
+	&:hover {
+		color: $color-success;
+	}
+
+	&:visited {
+		color: $color-success;
+	}
+}
+
+/**
+	* Sizes button
+	*/
+.btn-small {
+	@extend %btn;
+	line-height: $line-height-base + 0.5;
+}
+
+.btn-large {
+	@extend %btn;
+	width: 100%;
+}
+
+/**
+	* Group buttons
+	*/
+.btn-group {
+	position: relative;
+
+	[class^='btn-'],
+	[class*=' btn-'] {
+		border-radius: 0;
+		float: left;
+		margin-left: -1px;
+		position: relative;
+
+		&:first-child {
+			margin-left: 0;
+			@include border-radius(0, 0, btnRadius(radius-1), btnRadius(radius-1));
+		}
+
+		&:last-child {
+			@include border-radius(btnRadius(radius-1), btnRadius(radius-1), 0, 0);
+		}
+	}
+}
+
+.hyper-link {
+	color: $plt-primary;
+	text-align: center;
+	text-decoration: underline;
+	align-items: baseline;
+}
+
+.pointer{
+	cursor: pointer;
+}

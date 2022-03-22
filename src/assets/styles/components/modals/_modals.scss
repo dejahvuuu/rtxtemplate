@@ -1,0 +1,85 @@
+/*------------------------------------*\
+    $MODALS
+\*------------------------------------*/
+.modal-contain {
+	background-color: $white;
+	border-radius: btnRadius(radius-1);
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	position: absolute;
+}
+
+/**
+	* Alert modal
+	*/
+.modalAlert {
+	background-color: scaleGrey(semiLight);
+	border-radius: btnRadius(radius-2);
+	height: auto;
+	position: absolute;
+	bottom: 15px;
+	right: 6rem;
+	width: 450px;
+	margin-left: 3rem;
+
+	.modalAlert-close {
+		border: 0;
+		background: none;
+		color: #000;
+		cursor: pointer;
+		height: 16px;
+		margin: 8px;
+		width: 16px;
+	}
+}
+
+.modalAlert-icon {
+	background-color: lighten($color: $color-info, $amount: 40);
+	border-right: 2px solid $white;
+	width: 51px;
+}
+
+.modalAlert-info {
+	width: 397px;
+}
+
+.modal-text {
+	max-height: 420px;
+	overflow-y: auto;
+}
+
+@include respond-to-max(tablet) {
+	.modalAlert {
+		display: none !important;
+	}
+	.modal-contain {
+		max-width: -moz-fit-content;
+		max-width: fit-content;
+		& .stylized-icon i {
+			font-size: 2.5rem;
+			height: 66px;
+			width: 66px;
+		}
+		& .modal-text {
+			max-height: 260px !important;
+			overflow-y: auto;
+			&::before {
+				content: '';
+				display: block;
+				width: 100%;
+				height: 100%;
+				background: linear-gradient(0deg, $white 0%, transparent 10%);
+				mix-blend-mode: screen;
+				position: absolute;
+				bottom: 75px;
+				left: 0;
+			}
+		}
+	}
+}
+
+.MuiBackdrop-root {
+	background-color: rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,113 @@
+/*------------------------------------*\
+    $ICONS
+\*------------------------------------*/
+@font-face {
+	font-family: 'novoglyphs';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: url('../../icons/novoglyphs-webicons.woff') format('woff'),
+		url('../../icons/novoglyphs-webicons.eot?#iefix') format('eot'),
+		url('../../icons/novoglyphs-webicons.ttf') format('truetype'),
+		url('../../icons/novoglyphs-webicons.svg') format('svg');
+}
+
+span[class^='icon-'],
+span[class*=' icon-'],
+i[class^='icon-'],
+i[class*=' icon-'] {
+	display: inline-flex;
+	font-family: $font-family-novoglyphs;
+	font-size: inherit;
+	font-style: normal;
+	font-weight: normal;
+	height: auto;
+	line-height: auto;
+	text-align: center;
+	vertical-align: middle;
+	width: auto;
+}
+
+span[class^='icon-']:before,
+span[class*=' icon-']:before,
+i[class^='icon-']:before,
+i[class*=' icon-']:before {
+	vertical-align: middle;
+}
+
+/**
+	* Import icon list
+	*/
+@import './iconList';
+
+.container-btn-close {
+	& .container-icon-close {
+		margin-top: 3.5rem;
+	}
+}
+
+.container-icon-close {
+	color: scaleGrey(semiRegular);
+	position: absolute;
+	top: 8px;
+	right: 12px;
+}
+
+.stylized-icon {
+	& i {
+		animation: stylized-icon 1s ease-out;
+		background-color: lighten($color: $color-secondary, $amount: 25);
+		border-radius: 50%;
+		font-size: 2.5rem;
+		height: 65px;
+		width: 65px;
+	}
+}
+
+.rotate180 {
+	transform: rotate(180deg);
+}
+
+.rotate270 {
+	transform: rotate(270deg);
+}
+
+@-webkit-keyframes stylized-icon {
+	from {
+		background-color: lighten($color: $color-secondary, $amount: 50);
+		padding-top: 40px;
+	}
+
+	to {
+		background-color: lighten($color: $color-secondary, $amount: 25);
+		padding-top: 0px;
+	}
+}
+
+@keyframes stylized-icon {
+	from {
+		background-color: lighten($color: $color-secondary, $amount: 50);
+		padding-top: 40px;
+	}
+
+	to {
+		background-color: lighten($color: $color-secondary, $amount: 25);
+		padding-top: 0px;
+	}
+}
+
+/**
+	* Spinner
+	*/
+.spinner {
+	align-items: center;
+	bottom: 0;
+	color: scaleGrey(semiRegular);
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: zIndex(modal);
+}

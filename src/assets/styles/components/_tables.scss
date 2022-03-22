@@ -1,0 +1,42 @@
+/*------------------------------------*\
+    $TABLES STYLES
+\*------------------------------------*/
+
+.table{
+	border-top: 1px solid scaleGrey(light);
+	border-radius: initial;
+	box-shadow: none;
+	& thead{
+		background-color: #F9F9F9;
+		border: transparent !important;
+		& th{
+			color: $textcolor;
+			font-family: $font-family-base;
+			border-bottom: none;
+		}
+	}
+}
+
+.tool-ellipsis {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width: 12em;
+	width: 12em;
+	overflow: hidden;
+}
+
+.subtable-body{
+	background-color: #F9F9F9;
+	border: transparent !important;
+	& tr{
+		& td{
+			color: $textcolor;
+			font-family: $font-family-base;
+			border-bottom: none;
+		}
+	}
+}
+
+.MuiTablePagination-displayedRows{
+	margin-bottom: 0px;
+}

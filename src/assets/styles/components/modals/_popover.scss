@@ -1,0 +1,66 @@
+/*------------------------------------*\
+    $POPOVER
+\*------------------------------------*/
+.popper-contain {
+	background-color: #ffffff;
+	border-radius: btnRadius(radius-2);
+	@include box-shadow($shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1));
+}
+
+.MuiPopper-arrow {
+	font-size: 7px;
+	&::before {
+		content: '';
+		border-style: solid;
+		display: block;
+		height: 0;
+		margin: auto;
+		width: 0;
+	}
+}
+
+.popper {
+	z-index: zIndex(default);
+	&[data-popper-placement*='top'] .MuiPopper-arrow {
+		bottom: 0;
+		height: 1em;
+		left: 0;
+		margin-bottom: -0.9em;
+		width: 3em;
+		&::before {
+			border-color: $white transparent transparent transparent;
+			border-width: 1em 1em 0 1em;
+		}
+	}
+	&[data-popper-placement*='right'] > .MuiPopper-arrow {
+		height: 3em;
+		left: 0px;
+		margin-left: -0.9em;
+		width: 1em;
+		&::before {
+			border-color: transparent $white transparent transparent;
+			border-width: 1em 1em 1em 0;
+		}
+	}
+	&[data-popper-placement*='bottom'] .MuiPopper-arrow {
+		height: 1em;
+		left: 0;
+		margin-top: -0.9em;
+		top: 0;
+		width: 3em;
+		&::before {
+			border-color: transparent transparent $white transparent;
+			border-width: 0 1em 1em 1em;
+		}
+	}
+	&[data-popper-placement*='left'] .MuiPopper-arrow {
+		height: 3em;
+		margin-right: -0.9em;
+		right: 0;
+		width: 1em;
+		&::before {
+			border-color: transparent transparent transparent $white;
+			border-width: 1em 0 1em 1em;
+		}
+	}
+}

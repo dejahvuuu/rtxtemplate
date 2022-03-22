@@ -1,0 +1,54 @@
+.header {
+	background-color: $white;
+	border-bottom: 1.5px solid scaleGrey(semiLight);
+	box-shadow: none;
+}
+
+.main-content {
+	background-color: lighten($color: scaleGrey(regular), $amount: 35%);
+	min-height: 100vh;
+	& .content-width {
+		max-width: 1000px;
+		margin-top: 6rem;
+		width: 100%;
+	}
+}
+
+.MuiDrawer-paper{
+	border-right: 1.5px solid scaleGrey(semiLight);
+	font-size: 0.813rem;
+}
+
+.MuiAccordion-root{
+	margin: 0 !important;
+	font-size: 0.813rem;
+	box-shadow: none;
+	border: none !important;
+	&:not(:last-child) {
+    border-bottom: 0;
+  }
+	&:before {
+    display: none;
+  }
+}
+.MuiAccordionSummary-root{
+	padding: 0 !important;
+	&.Mui-expanded{
+		min-height: 52px;
+	}
+}
+
+.MuiAccordionSummary-content{
+	margin: auto;
+	&.Mui-expanded{
+		margin: auto;
+	}
+}
+
+.active{
+	background-color: lighten($color: $plt-primary, $amount: 40%);
+	color: $plt-primary !important;
+	&.submenu {
+		background-color: lighten($color: $plt-primary, $amount: 43%);
+	}
+}

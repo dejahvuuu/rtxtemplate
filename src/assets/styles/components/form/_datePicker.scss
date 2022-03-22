@@ -1,0 +1,77 @@
+.MuiFilledInput-root {
+	background-color: $white;
+	border: 1px solid scaleGrey(regular);
+	border-radius: btnRadius(radius-2) !important;
+	color: $textcolor;
+	font-family: $font-family-base;
+	height: calc(3.25rem + 2px);
+	padding-bottom: 0;
+	padding-top: 0;
+	&::before {
+		background-color: transparent;
+		border-bottom: currentColor;
+		content: none;
+	}
+	&:hover {
+		background-color: $white;
+		border-bottom: 1px solid currentColor;
+	}
+}
+
+.MuiFilledInput-root.Mui-disabled {
+	background-color: scaleGrey(semiLight) !important;
+	border-color: scaleGrey(regular);
+	@include opacity($opacity: 1);
+	cursor: default;
+}
+.MuiFilledInput-root:hover {
+	border-bottom: 1px solid currentColor;
+}
+
+.MuiFilledInput-root.Mui-error,
+.MuiFilledInput-root {
+	&::after {
+		border-bottom-color: transparent;
+		border-bottom: transparent;
+	}
+}
+
+.error {
+	& > .MuiFilledInput-root {
+		border-color: $color-error !important;
+	}
+}
+
+.MuiInputLabel-root {
+	font-family: $font-family-base;
+	font-size: 1.2rem;
+	@include opacity($opacity: 0.8);
+	&.Mui-error {
+		color: $textcolor;
+	}
+	&.Mui-disabled{
+		color: $textcolor;
+	}
+}
+
+.MuiFormHelperText-root {
+	background-color: $white;
+	color: $color-error;
+	font-family: $font-family-base;
+	font-size: 12px;
+	font-stretch: normal;
+	font-style: normal;
+	font-weight: $medium-font-weight;
+	letter-spacing: -0.2px;
+	line-height: $line-height-base;
+	margin-left: 0;
+	width: 100%;
+}
+
+.MuiInputLabel-root,
+.MuiTypography-root,
+.css-9a6yxo,
+.css-7w3s23 {
+	font-family: $font-family-base !important;
+	font-size: $font-size-base !important;
+}

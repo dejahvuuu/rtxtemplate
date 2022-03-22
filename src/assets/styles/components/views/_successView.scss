@@ -1,0 +1,10 @@
+/*------------------------------------*\
+    $VIEW OF PROCESS SUCCESS
+\*------------------------------------*/
+.process-container {
+	min-height: calc(90vh - 2.75rem);
+	& div {
+		max-width: 450px;
+		width: 100%;
+	}
+}

@@ -1,0 +1,21 @@
+.form-add {
+	background-color: rgba($plt-primary, 0.2);
+	background-position: right 0.6rem center !important;
+	border-right: none;
+	height: calc(3.25rem + 2px);
+	line-height: 1.4;
+	@include border-radius(0, 0, btnRadius(radius-2), btnRadius(radius-2));
+	&::placeholder {
+		color: $textcolor !important;
+	}
+	&:hover {
+		border: 1px solid scaleGrey(regular);
+		border-right: none;
+	}
+	&:disabled,
+	&[readonly] {
+		background-color: rgba($plt-primary, 0.2);
+		border-color: scaleGrey(regular);
+		@include opacity($opacity: 1);
+	}
+}

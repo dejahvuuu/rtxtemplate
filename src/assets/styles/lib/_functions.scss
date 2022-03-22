@@ -1,0 +1,76 @@
+/*------------------------------------*\
+    $FUNCTIONS
+\*------------------------------------*/
+/**
+	* Variables on the map in settings.scss.
+	*/
+
+/**
+	* Stack control function
+	*/
+@function zIndex($layer) {
+	@return map-get($z-layers, $layer);
+}
+
+/**
+	* Function to keep font size consistent.
+	*/
+@function fontSize($font-size) {
+	@return map-get($size-vars, $font-size) + rem;
+}
+
+/**
+	* button radio function.
+	*/
+@function btnRadius($radius) {
+	@return map-get($btn-border-radius, $radius) + px;
+}
+
+/**
+	* Grey scale function.
+	*/
+@function scaleGrey($scaleGrey) {
+	@return map-get($grey, $scaleGrey);
+}
+
+@function svg-factory-check($check-color) {
+	@return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="none" stroke="' +
+		$check-color +
+		'" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 10l3 3l6-6"/></svg>';
+}
+
+@function svg-factory-radio($circle-color) {
+	@return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="-4 -4 8 8"><circle r="2" fill="' +
+		$circle-color + '"/></svg>';
+}
+
+$svg-color-check: svg-factory-check($white);
+$svg-color-radio: svg-factory-radio($plt-primary);
+
+@function str-replace($string, $search, $replace: '') {
+	$index: str-index($string, $search);
+	@if $index {
+		@return str-slice($string, 1, $index - 1) + $replace +
+			str-replace(
+				str-slice($string, $index + str-length($search)),
+				$search,
+				$replace
+			);
+	}
+	@return $string;
+}
+
+$encoding-reference: (
+	('<', '%3C'),
+	('>', '%3E'),
+	('"', "'"),
+	('#', '%23'),
+	('&', '%26')
+);
+
+@function svg-encode($svg) {
+	@each $char, $encoded in $encoding-reference {
+		$svg: str-replace($svg, $char, $encoded);
+	}
+	@return 'data:image/svg+xml,' + $svg;
+}
