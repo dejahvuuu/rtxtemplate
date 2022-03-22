@@ -11,14 +11,14 @@ import {
 } from './UserSlice';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import { isTablet, isMobile } from 'react-device-detect';
+// import { isTablet, isMobile } from 'react-device-detect';
 import { getSchema } from '../../config/validations';
 
 // import LangButton from '../../components/button/LangButton';
 // import AlertsModals from '../../components/modals/AlertsModals';
 import InputTextField from '../../components/form/InputTextField';
-import InputPassField from '../../components/form/InputPassField';
-import TemplateModals from '../../components/modals/TemplateModals';
+// import InputPassField from '../../components/form/InputPassField';
+// import TemplateModals from '../../components/modals/TemplateModals';
 import Button from '../../components/button/ButtonForm';
 
 export default function SignInView() {
@@ -47,8 +47,8 @@ export default function SignInView() {
     dispatch(setPassword(e.target.value));
   };
 
-  const { isFetching, isSuccess, isError, errorMessage } =
-    useSelector(userSelector);
+  //const { isFetching, isSuccess, isError, errorMessage } =
+  const { isSuccess, isError } = useSelector(userSelector);
   const onSubmit = (data) => {
     console.log(data);
     data.username = data.email;

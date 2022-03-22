@@ -80,7 +80,7 @@ export default function DashboardMainView() {
   useEffect(() => {
     dispatch(fetchUserBytoken({ token: localStorage.getItem('token') }));
   }, [dispatch]);
-  const { username, email } = useSelector(userSelector);
+  // const { username, email } = useSelector(userSelector);
   useEffect(() => {
     if (isError) {
       dispatch(clearState());

@@ -1,4 +1,4 @@
-import { useState, Fragment, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
@@ -37,10 +37,10 @@ export default function SignUpView() {
     resolver: yupResolver(schema),
   });
   const history = useHistory();
-  const { isFetching, isSuccess, isError, errorMessage } =
-    useSelector(userSelector);
+  // const { isFetching, isSuccess, isError, errorMessage } =
+  const { isSuccess, isError } = useSelector(userSelector);
 
-  const specify = useSelector((state) => state.specify);
+  // const specify = useSelector((state) => state.specify);
 
   const onSubmit = (data) => {
     console.log(data);
