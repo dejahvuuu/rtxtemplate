@@ -61,7 +61,7 @@ export default function SignInView() {
     return () => {
       dispatch(clearState());
     };
-  }, []);
+  }, [dispatch]);
   useEffect(() => {
     if (isError) {
       //toast.error(errorMessage);
@@ -71,7 +71,7 @@ export default function SignInView() {
       dispatch(clearState());
       history.push('/dashboard');
     }
-  }, [isError, isSuccess]);
+  }, [isError, isSuccess, dispatch, history]);
 
   return (
     <>
