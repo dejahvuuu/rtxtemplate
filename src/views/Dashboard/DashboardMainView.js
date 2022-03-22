@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Box, Card } from '@mui/material';
 import Chart from 'react-apexcharts';
-
 import StatusCard from '../../components/cards/StatusCard';
 import dataChartGraph from '../../components/chart/dataChartGraph';
 
