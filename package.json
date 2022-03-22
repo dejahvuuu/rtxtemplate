@@ -1,7 +1,10 @@
 {
   "name": "rtxtemplate",
   "version": "0.1.0",
-  "private": true,
+    "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
   "dependencies": {
     "@date-io/date-fns": "1.x",
     "@emotion/react": "^11.8.1",
