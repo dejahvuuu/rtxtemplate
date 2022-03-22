@@ -51,7 +51,7 @@ export default function SignUpView() {
     return () => {
       dispatch(clearState());
     };
-  }, []);
+  }, [dispatch]);
 
   useEffect(() => {
     if (isSuccess) {
@@ -62,7 +62,7 @@ export default function SignUpView() {
       //toast.error(errorMessage);
       dispatch(clearState());
     }
-  }, [isSuccess, isError]);
+  }, [isSuccess, isError, dispatch, history]);
 
   const handleChange = (e) => {
     dispatch(setSpecify(e.target.value));

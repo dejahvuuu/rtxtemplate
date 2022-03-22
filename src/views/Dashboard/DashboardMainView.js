@@ -79,14 +79,14 @@ export default function DashboardMainView() {
   const { isFetching, isError } = useSelector(userSelector);
   useEffect(() => {
     dispatch(fetchUserBytoken({ token: localStorage.getItem('token') }));
-  }, []);
+  }, [dispatch]);
   const { username, email } = useSelector(userSelector);
   useEffect(() => {
     if (isError) {
       dispatch(clearState());
       history.push('/signin');
     }
-  }, [isError]);
+  }, [isError, dispatch, history]);
 
   return (
     <div className='container mx-auto'>
