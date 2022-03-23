@@ -1,7 +1,7 @@
 {
   "name": "rtxtemplate",
   "version": "0.1.0",
-    "files": [
+  "files": [
     "dist"
   ],
   "main": "dist/index.js",
