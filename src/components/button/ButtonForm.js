@@ -1,5 +1,6 @@
 export default function ButtonForm(props) {
   const { enabled, text, className, type } = props;
+
   return (
     <>
       {enabled ? (
